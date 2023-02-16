@@ -1,5 +1,5 @@
-# nodebrawl-core
-The world's first open source Brawl Stars private server core written on JavaScript. <br>
+# nodebrawl-core-http
+The world's first open source Brawl Stars private server core written on JavaScript. With HTTP Protocol support! <br>
 *[Now uses <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">Classes</a> instead of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions">Functions!</a>]*
 
 * [Русский язык](/README-ru.md)
@@ -19,3 +19,5 @@ The world's first open source Brawl Stars private server core written on JavaScr
 Because it's core. You need implement all messages/packets and logic by yourself.
 
 ![screen](/Screens/console.png)
+
+### [Click here to go to the documentation.](./docs/docs-en.md)

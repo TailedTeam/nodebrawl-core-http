@@ -13,6 +13,8 @@ class MessageFactory {
         this.packets[packetClass.id] = Packet
       })
     })
+
+    global.Messages = this.getPackets()
   }
 
   handle (id) {

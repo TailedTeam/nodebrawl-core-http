@@ -2,8 +2,12 @@ const net = require('net')
 const MessageFactory = require('./Protocol/MessageFactory')
 const server = new net.Server()
 const Messages = new MessageFactory()
+const HTTPServer = require("./Protocol/HTTPServer")
 
-const PORT = 9339
+const PORT = {
+  SERVER: 9339,
+  HTTP: 80
+};
 
 server.on('connection', async (client) => {
   client.log = function (text) {
@@ -51,8 +55,14 @@ server.on('connection', async (client) => {
   })
 })
 
-server.once('listening', () => console.log(`Server started on ${PORT} port!`))
-server.listen(PORT)
+server.once('listening', () => {
+  console.log(`[SERVER] >> Server started on ${PORT.SERVER} port!`)
+
+  let http = new HTTPServer(PORT.HTTP)
+  http.launch()
+})
+
+server.listen(PORT.SERVER)
 
 
 process.on("uncaughtException", e => console.log(e));

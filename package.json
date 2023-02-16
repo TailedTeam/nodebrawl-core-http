@@ -1,7 +1,7 @@
 {
-  "name": "nodebrawl-core",
+  "name": "nodebrawl-core-http",
   "version": "2.3.0",
-  "description": "The world's first open source Brawl Stars private server core written on JavaScript.",
+  "description": "The world's first open source Brawl Stars private server core written on JavaScript. With HTTP Protocol support!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "fs": "^0.0.1-security",
+    "koa": "^2.14.1",
+    "koa-range": "^0.3.0",
     "net": "^1.0.2"
   },
   "devDependencies": {

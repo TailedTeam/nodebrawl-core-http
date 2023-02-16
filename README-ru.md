@@ -1,6 +1,6 @@
-# nodebrawl-core
+# nodebrawl-core-http
 
-Первое в мире опенсурс ядро для приватного сервера Brawl Stars, написанное на JavaScript. <br>
+Первое в мире опенсурс ядро для приватного сервера Brawl Stars, написанное на JavaScript. С поддержкой HTTP протокола!<br>
 *[Теперь использует <a href="https://learn.javascript.ru/classes">Классы</a> вместо <a href="https://learn.javascript.ru/function-basics">Функций!</a>]*
 
 * [English language](/README.md)
@@ -20,3 +20,5 @@
 Потому что это ядро. Вам нужно реализовать все пакеты и логику самостоятельно.
 
 ![screen](/Screens/console.png)
+
+### [Нажми сюда, чтобы перейти в документацию.](./docs/docs-ru.md)
