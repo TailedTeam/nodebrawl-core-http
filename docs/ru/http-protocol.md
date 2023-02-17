@@ -27,7 +27,7 @@ class ExampleRequest{
     }
 };
 
-module.exports = YourClassName
+module.exports = ExampleRequest
 ```
 ### Разберём подробнее...
 
