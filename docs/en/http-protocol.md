@@ -11,7 +11,7 @@ If you use the nodebrawl-core-http fork, it's enabled by default with the server
 Basically, to create your own APIs.<br>
 As an example: Getting information about a player.
 
-## Как написать собственный метод?
+## How to write your own method?
 You need to create a file in the `/Protocol/HTTP` directory with any name, but it must end in `.js`<br>
 Example: `GetServerHealth.js`<br>
 In the file itself, you should use the following skeleton:
@@ -27,7 +27,7 @@ class ExampleRequest{
     }
 };
 
-module.exports = YourClassName
+module.exports = ExampleRequest
 ```
 ### Let's look at the details...
 
