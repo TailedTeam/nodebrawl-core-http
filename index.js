@@ -10,6 +10,7 @@ const PORT = {
 };
 
 server.on('connection', async (client) => {
+  client.setNoDelay(true)
   client.log = function (text) {
     return console.log(`[${this.remoteAddress.split(':').slice(-1)}] >> ${text}`)
   }
